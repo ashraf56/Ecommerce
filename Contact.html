@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Alatsi' rel='stylesheet'>
+
+    <link rel="stylesheet" href="css/home.css">
+    <title>REDDOT</title>
+</head>
+<body>
+
+    <div class="header">
+   <div class="cont">
+    <div class="navbar">
+        <div class="logo">
+        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+        
+        </div>
+        
+        <nav>
+        <ul id="menuitem">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Product.html">Product</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+        
+        </ul>
+        
+        </nav>
+        <img src="images/cart.png" width="30px" height="30px" class="cartpng">
+        <img src="images/menu.png" width="30px" height="30px" class="menupng" onclick="menutoggle()" >
+        </div>
+
+
+
+</div> </div>
+
+
+
+
+
+
+<div class="cen">
+
+
+<div class="small-container">
+    <div class="container">
+        <div style="text-align:center">
+        
+<h1>Contact US</h1>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="row">
+          <div class="column">
+            <img src="images/contact-book.png" style="width:100%">
+          </div>
+          <div class="column">
+            <form action="/Ecommerce/Contact.html">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="firstname" placeholder="Your name..">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+              <label for="country">Country</label>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select>
+              <label for="subject">Subject</label>
+              <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+              <input type="submit" value="Submit">
+            </form>
+          </div>
+        </div>
+      </div>
+    
+    
+    </div>
+</div>
+
+    
+
+
+
+
+<script>
+
+let menuitem = document.getElementById("menuitem");
+
+menuitem.style.maxHeight="0px";
+
+function menutoggle(){
+
+    if(menuitem.style.maxHeight =="0px"){
+        menuitem.style.maxHeight="200px";
+
+
+    }
+    else{
+        menuitem.style.maxHeight="0px";
+
+    }
+}
+
+</script>
+
+
+
+</body>
+
+
+</html>
